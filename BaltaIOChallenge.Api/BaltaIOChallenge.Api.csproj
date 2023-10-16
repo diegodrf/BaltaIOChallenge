@@ -1,0 +1,62 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+        <UserSecretsId>9554e6a8-c3dc-42b6-972f-c52ca9483e4a</UserSecretsId>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.12"/>
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.12">
+          <PrivateAssets>all</PrivateAssets>
+          <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
+        <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0"/>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Content Include="..\.dockerignore">
+        <Link>.dockerignore</Link>
+      </Content>
+      <Content Remove="Controllers\**" />
+      <Content Remove="Models\**" />
+      <Content Remove="Infrastructure\**" />
+      <Content Remove="Endpoints\**" />
+      <Content Remove="Migrations\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Remove="Controllers\WeatherForecastController.cs" />
+      <Compile Remove="WeatherForecast.cs" />
+      <Compile Remove="Controllers\ibge.cs" />
+      <Compile Remove="Controllers\**" />
+      <Compile Remove="Models\**" />
+      <Compile Remove="Infrastructure\**" />
+      <Compile Remove="Endpoints\**" />
+      <Compile Remove="Migrations\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Remove="Controllers\**" />
+      <EmbeddedResource Remove="Models\**" />
+      <EmbeddedResource Remove="Infrastructure\**" />
+      <EmbeddedResource Remove="Endpoints\**" />
+      <EmbeddedResource Remove="Migrations\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="Controllers\**" />
+      <None Remove="Models\**" />
+      <None Remove="Infrastructure\**" />
+      <None Remove="Endpoints\**" />
+      <None Remove="Migrations\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\BaltaIOChallenge.Core\BaltaIOChallenge.Core.csproj" />
+    </ItemGroup>
+
+</Project>

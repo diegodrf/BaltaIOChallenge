@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BaltaIOChallenge.Api", "BaltaIOChallenge.Api\BaltaIOChallenge.Api.csproj", "{8C0BC83C-72D0-433E-8B70-548A22CC0A16}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BaltaIOChallenge.Core", "BaltaIOChallenge.Core\BaltaIOChallenge.Core.csproj", "{DA31DA89-B0F7-4AB0-90CE-F72731AE4622}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BaltaIOChallenge.UnitTests", "BaltaIOChallenge.UnitTests\BaltaIOChallenge.UnitTests.csproj", "{46A3FFBF-C51C-4EDB-8E0D-5EB32C43AFA7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8C0BC83C-72D0-433E-8B70-548A22CC0A16}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C0BC83C-72D0-433E-8B70-548A22CC0A16}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C0BC83C-72D0-433E-8B70-548A22CC0A16}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C0BC83C-72D0-433E-8B70-548A22CC0A16}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA31DA89-B0F7-4AB0-90CE-F72731AE4622}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA31DA89-B0F7-4AB0-90CE-F72731AE4622}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA31DA89-B0F7-4AB0-90CE-F72731AE4622}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA31DA89-B0F7-4AB0-90CE-F72731AE4622}.Release|Any CPU.Build.0 = Release|Any CPU
+		{46A3FFBF-C51C-4EDB-8E0D-5EB32C43AFA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46A3FFBF-C51C-4EDB-8E0D-5EB32C43AFA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46A3FFBF-C51C-4EDB-8E0D-5EB32C43AFA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46A3FFBF-C51C-4EDB-8E0D-5EB32C43AFA7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
