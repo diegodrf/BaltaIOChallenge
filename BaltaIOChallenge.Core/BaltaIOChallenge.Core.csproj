@@ -4,13 +4,16 @@
         <TargetFramework>net7.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
+        <UserSecretsId>5f596216-1de4-4602-91da-d6b4343f22b4</UserSecretsId>
     </PropertyGroup>
 
     <ItemGroup>
       <Compile Remove="Class1.cs" />
+      <Compile Remove="DTOs\CityResponse.cs" />
     </ItemGroup>
 
     <ItemGroup>
+      <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="7.0.12" />
       <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.12" />
       <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="7.0.11" />
     </ItemGroup>

@@ -18,6 +18,19 @@ public static class SeedService
         dbContext.SaveChangesAsync();
     }
 
+    public static void CreateAdminUser(AppDbContext dbContext)
+    {
+        var admin = new User(1, "admin@admin.com", "123456");
+        
+        var adminAlreadyExist = dbContext.Users
+            .Any(x => x.Email == admin.Email);
+        
+        if(adminAlreadyExist) return;
+
+        dbContext.Users.Add(admin);
+        dbContext.SaveChanges();
+    }
+
     private static IEnumerable<City> Cities()
     {
         var id = 1;
